@@ -397,6 +397,10 @@
   .care p { margin: 0; color: var(--ink-2); font-size: 14.5px; }
 
   /* ---------- visit ---------- */
+  .svc-more { margin: 36px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 14px; color: rgba(251, 248, 243, .7); }
+  .svc-more a { color: var(--paper); text-decoration: none; padding: 7px 14px; border-radius: 999px; border: 1px solid rgba(251, 248, 243, .3); transition: background .3s, color .3s; }
+  .svc-more a:hover { background: var(--yellow); color: var(--ink); border-color: var(--yellow); }
+
   /* ---------- FAQ ---------- */
   .faq-intro { margin: 26px 0 0; max-width: 760px; color: var(--ink-2); font-size: 15.5px; }
   .faq-list { margin-top: 40px; display: grid; gap: 12px; max-width: 900px; }
@@ -482,7 +486,8 @@
   .foot-call { font-family: var(--cjk); font-weight: 900; font-size: clamp(28px, 4.6vw, 50px); line-height: 1.2; margin: 0; }
   .foot-call .en { display: block; font-family: var(--display); font-style: italic; font-weight: 400; font-size: .5em; color: rgba(251, 248, 243, .6); margin-top: 8px; }
   .foot-cols { display: grid; gap: 26px; margin-top: 48px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, .14); font-size: 14px; color: rgba(251, 248, 243, .75); }
-  @media (min-width: 760px) { .foot-cols { grid-template-columns: 1.4fr 1fr 1fr; } }
+  @media (min-width: 760px) { .foot-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1000px) { .foot-cols { grid-template-columns: 1.4fr 1fr 1fr 1.2fr; } }
   .foot-cols h4 { margin: 0 0 10px; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: rgba(251, 248, 243, .45); }
   .foot-cols p { margin: 0 0 4px; }
   .foot-cols a { text-decoration: none; }
@@ -734,6 +739,7 @@
         <div class="price"><span>promo <b>RM365</b> <s style="opacity:.5">RM580</s></span><span class="go"><svg><use href="#i-arrow"/></svg></span></div>
       </article>
     </div>
+    <p class="svc-more rv">了解更多 Learn more：<a href="hair-colour-jb/">新山染发</a><a href="short-hair-jb/">女生短发</a><a href="head-spa-mount-austin/">YUME 头浸浴</a><a href="hair-salon-mount-austin/">Hair Salon Mount Austin (EN)</a></p>
   </div>
   <svg class="wave-bot" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path fill="#161412" d="M0 60V30C120 6 240 0 360 14s240 40 360 34 240-40 360-44 240 14 360 26v30z"/></svg>
 </section>
@@ -1021,6 +1027,7 @@
         <div><h4>Salon</h4><p>新山 Mount Austin 发廊 · 发型师 Ching 至青</p><p>23-01, Jalan Austin Heights 8/3, Taman Mount Austin, 81100 Johor Bahru</p></div>
         <div><h4>Hours · Contact</h4><p>10:00 AM – 6:00 PM</p><p>星期四休息 Closed Thursday</p><p>需预约 Appointment required</p><p><a href="tel:+601170122592">+6011-7012 2592</a></p></div>
         <div><h4>Explore</h4><p><a href="#services">服务 Services</a></p><p><a href="#price">价目 Price</a></p><p><a href="#reviews">评价 Reviews</a></p><p><a href="#faq">常见问题 FAQ</a></p><p><a href="#visit">到店 Visit</a></p></div>
+        <div><h4>Popular</h4><p><a href="hair-colour-jb/">新山染发 Hair Colour</a></p><p><a href="short-hair-jb/">新山女生短发 Short Hair</a></p><p><a href="head-spa-mount-austin/">YUME 头浸浴 Head Spa</a></p><p><a href="hair-salon-mount-austin/">Hair Salon Mount Austin</a></p></div>
       </div>
       <p class="copyright"><span>© <span id="year">2026</span> Ethereal @ Colour Monster</span><span>Made with colour in Johor Bahru</span></p>
     </div>
