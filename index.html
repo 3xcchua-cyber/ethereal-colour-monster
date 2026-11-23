@@ -3,13 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ethereal @ Colour Monster｜新山 Mount Austin 发廊 · 发型师 Ching 至青</title>
-<meta name="description" content="Ethereal @ Colour Monster 是新山 Mount Austin 的发廊，发型师 Ching 至青专做女生短发、灰色系染发、质感纹理调整、烫发、头皮护理与 YUME Headbath。全预约制 By appointment only，请 WhatsApp 预约 +6011-7012 2592。">
+<title>Ethereal @ Colour Monster｜Hair Salon Mount Austin JB · 新山发廊 · 发型师 Ching 至青</title>
+<meta name="description" content="Ethereal @ Colour Monster 是新山 Mount Austin 的发廊，发型师 Ching 至青专做女生短发、灰色系染发、质感纹理调整、烫发、头皮护理与 YUME Headbath。营业 10am–6pm，星期四休息，需预约。Hair salon in Mount Austin, Johor Bahru — appointment required. WhatsApp +6011-7012 2592。">
+<link rel="canonical" href="https://etherealcolourmonster.com/">
+<meta property="og:url" content="https://etherealcolourmonster.com/">
 <meta name="keywords" content="Johor Bahru hair salon, Mount Austin hair salon, JB hairstylist, 新山发廊, 新山发型师, 新山染发, 新山女生短发, ash grey hair Johor Bahru, Texture Refining, 新山烫发, 新山头皮护理, YUME Headbath Johor Bahru, Tokio Inkarami Johor Bahru, Ethereal Colour Monster">
 <meta property="og:title" content="Ethereal @ Colour Monster｜新山 Mount Austin 发廊">
 <meta property="og:description" content="先看懂你的头发，再决定颜色。女生短发、灰色系染发、质感纹理调整、烫发与头皮护理。Google 4.9★">
 <meta property="og:type" content="website">
-<meta property="og:image" content="images/logo.jpg">
+<meta property="og:image" content="https://etherealcolourmonster.com/images/logo.jpg">
 <meta name="theme-color" content="#FBF8F3">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="images/logo.jpg">
@@ -18,10 +20,19 @@
 {
   "@context": "https://schema.org",
   "@type": "HairSalon",
-  "name": "Ethereal @ Colour Monster",
-  "description": "Hair salon in Mount Austin, Johor Bahru, led by hairstylist Ching 至青.",
-  "image": "images/logo.jpg",
-  "logo": "images/logo.jpg",
+  "name": "Ethereal@Colour Monster",
+  "alternateName": ["Ethereal @ Colour Monster", "Ethereal Colour Monster", "Ethereal Hair @ Colour Monster"],
+  "url": "https://etherealcolourmonster.com/",
+  "description": "Hair salon in Mount Austin, Johor Bahru, led by hairstylist Ching 至青. Women's short haircuts, ash grey hair colour, texture refining, perm, scalp care and YUME Headbath. Appointment required.",
+  "image": "https://etherealcolourmonster.com/images/logo.jpg",
+  "logo": "https://etherealcolourmonster.com/images/logo.jpg",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday","Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "18:00"
+  }],
+  "areaServed": ["Mount Austin", "Johor Bahru"],
   "telephone": "+601170122592",
   "priceRange": "RM25 - RM580",
   "address": {
@@ -42,6 +53,21 @@
     "https://www.youtube.com/@etherealcolourmonster",
     "https://xhslink.cn/m/96OFjpZuW5q",
     "https://s.lemon8-app.com/al/GgFvFFUQxM"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Do I need an appointment at Ethereal @ Colour Monster?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every visit is by appointment. Please WhatsApp +6011-7012 2592 to book." } },
+    { "@type": "Question", "name": "What are the opening hours of Ethereal @ Colour Monster?", "acceptedAnswer": { "@type": "Answer", "text": "10:00 AM – 6:00 PM daily, closed on Thursdays. Appointment required." } },
+    { "@type": "Question", "name": "Where is Ethereal @ Colour Monster?", "acceptedAnswer": { "@type": "Answer", "text": "23-01, Jalan Austin Heights 8/3, Taman Mount Austin, 81100 Johor Bahru, Johor, Malaysia." } },
+    { "@type": "Question", "name": "How much does a haircut or hair colour cost?", "acceptedAnswer": { "@type": "Answer", "text": "Women's haircut from RM58, colour from RM180, hair treatment from RM80, scalp treatment from RM250, perm or texture refining from RM500++. Final price depends on hair length and condition." } },
+    { "@type": "Question", "name": "What does Ethereal @ Colour Monster specialise in?", "acceptedAnswer": { "@type": "Answer", "text": "Women's short haircuts, ash grey and milk-tea hair colour, texture refining, perms and scalp care, by hairstylist Ching (至青) in Mount Austin, Johor Bahru." } },
+    { "@type": "Question", "name": "Do I need bleach for ash grey hair?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your current colour and hair condition. Most grey tones need lightening first; the stylist checks your hair and advises before starting." } },
+    { "@type": "Question", "name": "Does the salon have Muslim-friendly products or a private room?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, there are Muslim-friendly products and a private room. Mention it when you book." } }
   ]
 }
 </script>
@@ -371,6 +397,20 @@
   .care p { margin: 0; color: var(--ink-2); font-size: 14.5px; }
 
   /* ---------- visit ---------- */
+  /* ---------- FAQ ---------- */
+  .faq-intro { margin: 26px 0 0; max-width: 760px; color: var(--ink-2); font-size: 15.5px; }
+  .faq-list { margin-top: 40px; display: grid; gap: 12px; max-width: 900px; }
+  .faq-list details { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 0 22px; transition: box-shadow .3s, border-color .3s; }
+  .faq-list details[open] { border-color: var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+  .faq-list summary { list-style: none; cursor: pointer; padding: 18px 34px 18px 0; position: relative; font-weight: 700; font-size: 16px; line-height: 1.45; }
+  .faq-list summary::-webkit-details-marker { display: none; }
+  .faq-list summary small { display: block; font-weight: 400; color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+  .faq-list summary::after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 26px; height: 26px; border-radius: 50%; background: var(--yellow); display: grid; place-items: center; font-size: 18px; line-height: 1; transition: transform .35s var(--spring); }
+  .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  .faq-list .ans { padding: 0 0 20px; color: var(--ink-2); font-size: 15px; }
+  .faq-list .ans p { margin: 0 0 6px; }
+  .faq-list .ans .en { color: var(--muted); font-size: 14px; }
+
   .visit { background: var(--paper-2); }
   .visit-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; margin-top: 48px; }
   @media (min-width: 980px) { .visit-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
@@ -572,7 +612,7 @@
       </div>
       <div class="stats fade-up d4">
         <div class="stat"><span class="ic" style="background:var(--yellow)"><svg><use href="#i-star"/></svg></span><div><b><span data-count="4.9" data-dec="1">0</span> ★</b>Google 102 条评价</div></div>
-        <div class="stat"><span class="ic" style="background:#D7F5E2"><i class="dot open"></i></span><div><b>全预约制</b><span>By appointment only</span></div></div>
+        <div class="stat"><span class="ic" style="background:#D7F5E2"><i class="dot open"></i></span><div><b>10am – 6pm</b><span>星期四休息 · 需预约</span></div></div>
       </div>
     </div>
 
@@ -849,6 +889,35 @@
   </div>
 </section>
 
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow"><i><svg><use href="#i-chat"/></svg></i>FAQ · 常见问题</span>
+      <h2 class="title">预约前，你可能想知道<em>Good to know before you book.</em></h2>
+      <p class="faq-intro" lang="en">Ethereal @ Colour Monster is a hair salon in Mount Austin, Johor Bahru, run by hairstylist Ching (至青). We focus on women's short haircuts, ash grey and soft-tone hair colour, texture refining, perms, scalp treatments and the Takara Belmont YUME Headbath. Open 10am–6pm, closed on Thursdays, and every visit is by appointment — book through WhatsApp at +6011-7012 2592.</p>
+    </div>
+    <div class="faq-list">
+      <details class="rv"><summary>需要预约吗？<small>Do I need an appointment?</small></summary>
+        <div class="ans"><p>需要。我们是预约制，为了让每位客人都有足够的时间，请先 WhatsApp <a href="https://wa.me/601170122592">+6011-7012 2592</a> 预约时间。</p><p class="en">Yes. Every visit is by appointment so each client gets enough time. Please WhatsApp us first.</p></div></details>
+      <details class="rv"><summary>营业时间是几点？<small>What are your opening hours?</small></summary>
+        <div class="ans"><p>星期一至星期日 10:00 AM – 6:00 PM，<b>星期四休息</b>。</p><p class="en">10:00 AM – 6:00 PM daily, closed on Thursdays. Appointment required.</p></div></details>
+      <details class="rv"><summary>店在哪里？<small>Where is the salon?</small></summary>
+        <div class="ans"><p>23-01, Jalan Austin Heights 8/3, Taman Mount Austin, 81100 Johor Bahru, Johor。可以用 <a href="https://maps.app.goo.gl/KCUcaTukjxPqChet8" target="_blank" rel="noopener">Google Maps</a> 导航。</p><p class="en">We're in Austin Heights, Mount Austin, Johor Bahru.</p></div></details>
+      <details class="rv"><summary>价钱大概多少？<small>How much does it cost?</small></summary>
+        <div class="ans"><p>女生剪发 RM58 起、染发 RM180 起、头发护理 RM80 起、头皮护理 RM250 起、烫发 / 质感纹理调整 RM500++ 起。实际价钱会根据头发长度和状态而定，可以看上面的<a href="#price">价目表</a>。</p><p class="en">Women's haircut from RM58, colour from RM180, hair treatment from RM80, scalp treatment from RM250, perm / texture refining from RM500++. Final price depends on hair length and condition.</p></div></details>
+      <details class="rv"><summary>你们专门做什么？<small>What do you specialise in?</small></summary>
+        <div class="ans"><p>女生短发、灰色系 / 奶茶色染发、质感纹理调整、烫发和头皮护理。做之前会先看懂你的头发状况，再建议适合的发型和颜色。</p><p class="en">Women's short hair, ash grey and milk-tea hair colour, texture refining, perms and scalp care. We look at your hair first, then recommend what suits you.</p></div></details>
+      <details class="rv"><summary>染灰色系一定要漂发吗？<small>Do I need bleach for ash grey hair?</small></summary>
+        <div class="ans"><p>要看你现在的发色和发质。大部分灰色系需要先把头发提亮，至青会先检查头发，再告诉你需要几次、适不适合。</p><p class="en">It depends on your current colour and hair condition. Most grey tones need lightening first — Ching will check your hair and advise before starting.</p></div></details>
+      <details class="rv"><summary>YUME Headbath 是什么？<small>What is the YUME Headbath?</small></summary>
+        <div class="ans"><p>Takara Belmont YUME 是一张让你躺着洗头和做头皮护理的洗护床，躺起来很舒服、很放松。</p><p class="en">The Takara Belmont YUME is a reclining wash and spa bed for a comfortable, relaxing hair wash and scalp care.</p></div></details>
+      <details class="rv"><summary>有 Muslim friendly 产品或私人房间吗？<small>Muslim-friendly products or a private room?</small></summary>
+        <div class="ans"><p>有，我们有 Muslim friendly 产品和私人房间，预约时可以先告诉我们。</p><p class="en">Yes, we have Muslim-friendly products and a private room. Just let us know when you book.</p></div></details>
+    </div>
+  </div>
+</section>
+
 <!-- ================= VISIT ================= -->
 <section id="visit" class="visit">
   <div class="wrap">
@@ -860,7 +929,7 @@
       <div class="info-card rv">
         <h3>Ethereal @ Colour Monster</h3>
         <div class="irow"><span class="ii"><svg><use href="#i-pin"/></svg></span><div><small>地址 Address</small>23-01, Jalan Austin Heights 8/3, Taman Mount Austin, 81100 Johor Bahru, Johor</div></div>
-        <div class="irow"><span class="ii"><svg><use href="#i-clock"/></svg></span><div style="flex:1;min-width:0"><small>营业时间 Hours</small>全预约制 · By appointment only<br>没有固定营业时间，请先 WhatsApp 预约时间。
+        <div class="irow"><span class="ii"><svg><use href="#i-clock"/></svg></span><div style="flex:1;min-width:0"><small>营业时间 Hours</small>10:00 AM – 6:00 PM · 星期四休息 Closed Thu<br>需预约 Appointment required — 请先 WhatsApp 预约时间。
           <span class="open-pill"><i class="dot open"></i><span>WhatsApp 预约 · Book via WhatsApp</span></span>
         </div></div>
         <div class="irow"><span class="ii"><svg><use href="#i-phone"/></svg></span><div><small>电话 Phone</small><a href="tel:+601170122592">+6011-7012 2592</a></div></div>
@@ -950,8 +1019,8 @@
       </div>
       <div class="foot-cols">
         <div><h4>Salon</h4><p>新山 Mount Austin 发廊 · 发型师 Ching 至青</p><p>23-01, Jalan Austin Heights 8/3, Taman Mount Austin, 81100 Johor Bahru</p></div>
-        <div><h4>Hours · Contact</h4><p>全预约制</p><p>By appointment only</p><p><a href="tel:+601170122592">+6011-7012 2592</a></p></div>
-        <div><h4>Explore</h4><p><a href="#services">服务 Services</a></p><p><a href="#price">价目 Price</a></p><p><a href="#reviews">评价 Reviews</a></p><p><a href="#visit">到店 Visit</a></p></div>
+        <div><h4>Hours · Contact</h4><p>10:00 AM – 6:00 PM</p><p>星期四休息 Closed Thursday</p><p>需预约 Appointment required</p><p><a href="tel:+601170122592">+6011-7012 2592</a></p></div>
+        <div><h4>Explore</h4><p><a href="#services">服务 Services</a></p><p><a href="#price">价目 Price</a></p><p><a href="#reviews">评价 Reviews</a></p><p><a href="#faq">常见问题 FAQ</a></p><p><a href="#visit">到店 Visit</a></p></div>
       </div>
       <p class="copyright"><span>© <span id="year">2026</span> Ethereal @ Colour Monster</span><span>Made with colour in Johor Bahru</span></p>
     </div>
@@ -1092,9 +1161,14 @@
   modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeModal(); setMenu(false); } });
 
-  /* ---------- form -> WhatsApp ---------- */
+  /* ---------- form -> WhatsApp (warn on Thursday) ---------- */
   var form = $('#contactForm'), hint = $('#formHint'), dateIn = $('#ctDate');
   dateIn.min = myt.getFullYear() + '-' + String(myt.getMonth() + 1).padStart(2, '0') + '-' + String(myt.getDate()).padStart(2, '0');
+  dateIn.addEventListener('change', function () {
+    var d = dateIn.value && new Date(dateIn.value + 'T12:00:00');
+    if (d && d.getDay() === 4) { hint.textContent = '星期四是我们的休息日，请选择其他日期 🙏 We are closed on Thursdays.'; hint.classList.remove('show'); void hint.offsetWidth; hint.classList.add('show'); }
+    else hint.classList.remove('show');
+  });
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var v = function (id) { return document.getElementById(id).value.trim(); };
