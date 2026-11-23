@@ -33,6 +33,7 @@
     "closes": "18:00"
   }],
   "areaServed": ["Mount Austin", "Johor Bahru"],
+  "knowsLanguage": ["en", "zh", "ms"],
   "telephone": "+601170122592",
   "priceRange": "RM25 - RM580",
   "address": {
@@ -67,6 +68,8 @@
     { "@type": "Question", "name": "How much does a haircut or hair colour cost?", "acceptedAnswer": { "@type": "Answer", "text": "Women's haircut from RM58, colour from RM180, hair treatment from RM80, scalp treatment from RM250, perm or texture refining from RM500++. Final price depends on hair length and condition." } },
     { "@type": "Question", "name": "What does Ethereal @ Colour Monster specialise in?", "acceptedAnswer": { "@type": "Answer", "text": "Women's short haircuts, ash grey and milk-tea hair colour, texture refining, perms and scalp care, by hairstylist Ching (至青) in Mount Austin, Johor Bahru." } },
     { "@type": "Question", "name": "Do I need bleach for ash grey hair?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your current colour and hair condition. Most grey tones need lightening first; the stylist checks your hair and advises before starting." } },
+    { "@type": "Question", "name": "Do you speak English or Bahasa Melayu?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The salon serves clients in English, Chinese and Bahasa Melayu." } },
+    { "@type": "Question", "name": "Which hair colour brands does Ethereal @ Colour Monster use?", "acceptedAnswer": { "@type": "Answer", "text": "Professional colour from Number Three (003, Japan) and Alfaparf Milano (Italy)." } },
     { "@type": "Question", "name": "Does the salon have Muslim-friendly products or a private room?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, there are Muslim-friendly products and a private room. Mention it when you book." } }
   ]
 }
@@ -397,6 +400,7 @@
   .care p { margin: 0; color: var(--ink-2); font-size: 14.5px; }
 
   /* ---------- visit ---------- */
+  .tr { display: block; font-family: var(--display); font-style: italic; font-weight: 400; font-size: .88em; line-height: 1.5; opacity: .62; margin-top: 4px; letter-spacing: 0; }
   .svc-more { margin: 36px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 14px; color: rgba(251, 248, 243, .7); }
   .svc-more a { color: var(--paper); text-decoration: none; padding: 7px 14px; border-radius: 999px; border: 1px solid rgba(251, 248, 243, .3); transition: background .3s, color .3s; }
   .svc-more a:hover { background: var(--yellow); color: var(--ink); border-color: var(--yellow); }
@@ -610,7 +614,7 @@
         </span>。</span></span>
       </h1>
       <p class="en fade-up d1">We read your hair before we choose your colour.</p>
-      <p class="desc fade-up d2">我是 Ching 至青，新山 Mount Austin 的发型师。专做女生短发、灰色系染发、质感纹理调整、烫发和头皮护理。</p>
+      <p class="desc fade-up d2">我是 Ching 至青，新山 Mount Austin 的发型师。专做女生短发、灰色系染发、质感纹理调整、烫发和头皮护理。<span class="tr">I'm Ching, a hairstylist in Mount Austin, JB — women's short hair, ash grey colour, texture refining, perms and scalp care. We speak English, 中文 &amp; Bahasa Melayu.</span></p>
       <div class="hero-cta fade-up d3">
         <a class="btn btn-wa" href="https://wa.me/601170122592" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp 预约</a>
         <a class="btn btn-ghost" href="#services"><svg><use href="#i-sparkle"/></svg>看看服务</a>
@@ -654,14 +658,15 @@
     <div class="rv">
       <span class="eyebrow"><i><svg><use href="#i-heart"/></svg></i>Our Way · 我们的做法</span>
       <p class="quote"><span class="hl">适合的，会帮你做。</span><br><span class="hl c2">不适合的，</span><br>也会诚实说明原因。</p>
+      <p class="tr" style="margin-top:14px">If it suits you, we'll do it. If it doesn't, we'll honestly tell you why.</p>
       <div class="about-text">
-        <p>Ethereal @ Colour Monster 不追求吵闹的打卡感。我们希望你进来之后，可以慢慢放松下来。</p>
-        <p>动剪刀或调颜色之前，Ching 会先看你的发质、发量、头发状态、脸型和日常整理习惯，再判断适不适合你。</p>
+        <p>Ethereal @ Colour Monster 不追求吵闹的打卡感。我们希望你进来之后，可以慢慢放松下来。<span class="tr">No noisy, made-for-Instagram vibe — just a calm space where you can relax.</span></p>
+        <p>动剪刀或调颜色之前，Ching 会先看你的发质、发量、头发状态、脸型和日常整理习惯，再判断适不适合你。<span class="tr">Before any cut or colour, Ching looks at your hair texture, density, condition, face shape and daily routine.</span></p>
       </div>
       <ol class="steps">
-        <li><span class="si" style="color:var(--orange)"><svg><use href="#i-eye"/></svg></span><div><b>01 · 看发况 Hair check</b><span>发质、底色、受损程度和过去的染烫记录</span></div></li>
-        <li><span class="si" style="color:var(--red)"><svg><use href="#i-chat"/></svg></span><div><b>02 · 聊方向 Consultation</b><span>脸型、生活习惯，还有你每天愿意花多少时间整理</span></div></li>
-        <li><span class="si" style="color:var(--violet)"><svg><use href="#i-heart"/></svg></span><div><b>03 · 做与教 Style &amp; care</b><span>完成后教你在家怎么洗、怎么护理、怎么保持颜色</span></div></li>
+        <li><span class="si" style="color:var(--orange)"><svg><use href="#i-eye"/></svg></span><div><b>01 · 看发况 Hair check</b><span>发质、底色、受损程度和过去的染烫记录<span class="tr">Texture, base colour, damage and colour/perm history</span></span></div></li>
+        <li><span class="si" style="color:var(--red)"><svg><use href="#i-chat"/></svg></span><div><b>02 · 聊方向 Consultation</b><span>脸型、生活习惯，还有你每天愿意花多少时间整理<span class="tr">Face shape, lifestyle and how much time you spend styling</span></span></div></li>
+        <li><span class="si" style="color:var(--violet)"><svg><use href="#i-heart"/></svg></span><div><b>03 · 做与教 Style &amp; care</b><span>完成后教你在家怎么洗、怎么护理、怎么保持颜色<span class="tr">We show you how to wash, care for and keep your colour at home</span></span></div></li>
       </ol>
     </div>
     <div class="photos rv-scale">
@@ -699,43 +704,43 @@
       <article class="svc rv" style="--c:var(--yellow)">
         <div class="top"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.6 7.6 20 18M8.6 16.4 20 6"/></svg></span><span class="num">01</span></div>
         <h3>女生剪发<small>Women's Haircut</small></h3>
-        <p>想剪短、修饰脸型、调整发型结构，或不确定自己适不适合短发，都可以先来聊聊。</p>
+        <p>想剪短、修饰脸型、调整发型结构，或不确定自己适不适合短发，都可以先来聊聊。<span class="tr">Going short, framing your face or reshaping your cut — not sure? Let's talk first.</span></p>
         <div class="price"><span>from <b>RM58</b></span><span class="go"><svg><use href="#i-arrow"/></svg></span></div>
       </article>
       <article class="svc rv wide" style="--c:#C3A8F0;--d:.08s">
         <div class="top"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5 19.5 9.5 11 18l-5-5z"/><path d="M6 13c-2 0-3 1.6-3 3.4C3 18.5 2 19.5 2 19.5S5.5 21 7.6 19c1-1 .9-2.6-.1-3.6"/><path d="M16.8 2.2l5 5"/></svg></span><span class="num">02</span></div>
         <h3>染发 · 挑染 · 漂发<small>Colour, Highlight &amp; Bleach</small></h3>
-        <p>自然发色、灰色系、ash beige、奶茶色、挑染、漂发，还有大胆的亮色。效果会根据底色、发质和过去的染发记录来判断，也会教你怎么用护色洗发水保持颜色。</p>
+        <p>自然发色、灰色系、ash beige、奶茶色、挑染、漂发，还有大胆的亮色。使用日本 Number Three（003）和意大利 Alfaparf Milano 染膏，效果会根据底色、发质和过去的染发记录来判断，也会教你怎么用护色洗发水保持颜色。<span class="tr">Natural, ash grey, ash beige, milk tea, highlights, bleach and vivid colours, using Number Three (Japan) and Alfaparf Milano (Italy) colour.</span></p>
         <div class="price"><span>from <b>RM180</b></span><span class="go"><svg><use href="#i-arrow"/></svg></span></div>
       </article>
       <article class="svc rv" style="--c:var(--cyan)">
         <div class="top"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7c3-3 6 3 9 0s6 3 9 0"/><path d="M3 12c3-3 6 3 9 0s6 3 9 0"/><path d="M3 17c3-3 6 3 9 0s6 3 9 0"/></svg></span><span class="num">03</span></div>
         <h3>质感纹理调整<small>Texture Refining</small></h3>
-        <p>头发毛、轻飘、蓬乱，又不想做得太直太死板？让头发更顺、更有质感、更好整理。</p>
+        <p>头发毛、轻飘、蓬乱，又不想做得太直太死板？让头发更顺、更有质感、更好整理。<span class="tr">Frizzy or puffy hair, without the flat, poker-straight look.</span></p>
         <div class="price"><span>from <b>RM500<small>++</small></b></span><span class="go"><svg><use href="#i-arrow"/></svg></span></div>
       </article>
       <article class="svc rv" style="--c:var(--orange);--d:.08s">
         <div class="top"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 0-5 2-5 4.5S9 11 11.5 11 15 9.5 15 8s-1-2.5-2.5-2.5"/><path d="M12 21c3 0 5-2 5-4.5S15 13 12.5 13 9 14.5 9 16s1 2.5 2.5 2.5"/><path d="M7 7.5C5 9 4 11 4 13M17 16.5c2-1.5 3-3.5 3-5.5"/></svg></span><span class="num">04</span></div>
         <h3>烫发<small>Perm</small></h3>
-        <p>自然卷度、空气感和发型支撑。烫之前会先看发质、发量、受损程度和整理习惯。</p>
+        <p>自然卷度、空气感和发型支撑。烫之前会先看发质、发量、受损程度和整理习惯。<span class="tr">Natural waves, volume and shape — planned around your hair condition.</span></p>
         <div class="price"><span>from <b>RM500<small>++</small></b></span><span class="go"><svg><use href="#i-arrow"/></svg></span></div>
       </article>
       <article class="svc rv" style="--c:var(--green);--d:.16s">
         <div class="top"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19l8-8"/></svg></span><span class="num">05</span></div>
         <h3>头皮护理<small>Scalp Treatment</small></h3>
-        <p>清洁头皮、减轻负担感，防脱、生发、去屑、姜疗都有对应疗程。</p>
+        <p>清洁头皮、减轻负担感，防脱、生发、去屑、姜疗都有对应疗程。<span class="tr">Scalp cleansing, anti hair loss, hair growth, anti dandruff and ginger treatments.</span></p>
         <div class="price"><span>from <b>RM250</b></span><span class="go"><svg><use href="#i-arrow"/></svg></span></div>
       </article>
       <article class="svc rv" style="--c:#F6B8C9">
         <div class="top"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg></span><span class="num">06</span></div>
         <h3>头发护理<small>Hair Treatment</small></h3>
-        <p>基础护理、深层护理和 Tokio Inkarami。护理方向按你头发当下的状态来决定。</p>
+        <p>基础护理、深层护理和 Tokio Inkarami。护理方向按你头发当下的状态来决定。<span class="tr">Basic, deep and Tokio Inkarami treatments, chosen for your hair's condition.</span></p>
         <div class="price"><span>from <b>RM80</b></span><span class="go"><svg><use href="#i-arrow"/></svg></span></div>
       </article>
       <article class="svc rv wide" style="--c:#9FE3F2;--d:.08s">
         <div class="top"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18v2a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6z"/><path d="M6 12V6a2 2 0 0 1 3.6-1.2"/><circle cx="14" cy="6" r="1.4"/><circle cx="18" cy="8" r="1"/></svg></span><span class="num">07</span></div>
         <h3>YUME 头浸浴<small>YUME Headbath · 11 steps · 70 min</small></h3>
-        <p>使用 Takara Belmont YUME 洗护床，70 分钟、11 个步骤，让头皮和心情一起放松。现在有优惠价。</p>
+        <p>使用 Takara Belmont YUME 洗护床，70 分钟、11 个步骤，让头皮和心情一起放松。现在有优惠价。<span class="tr">A 70-minute, 11-step head spa on the Takara Belmont YUME bed. Promo price now.</span></p>
         <div class="price"><span>promo <b>RM365</b> <s style="opacity:.5">RM580</s></span><span class="go"><svg><use href="#i-arrow"/></svg></span></div>
       </article>
     </div>
@@ -752,7 +757,7 @@
         <span class="eyebrow"><i><svg><use href="#i-tag"/></svg></i>Price List · 价目表</span>
         <h2 class="title">价目表<em>All prices in RM.</em></h2>
       </div>
-      <p>实际价格会根据头发长度、发量、发质、受损程度和操作内容调整。不确定的话，WhatsApp 发张照片给我们先看看。</p>
+      <p>实际价格会根据头发长度、发量、发质、受损程度和操作内容调整。不确定的话，WhatsApp 发张照片给我们先看看。<span class="tr">Final price depends on length, density and condition. Not sure? WhatsApp us a photo.</span></p>
     </div>
 
     <div class="price-grid">
@@ -881,15 +886,15 @@
     <div class="care-grid">
       <article class="care rv" style="--c:rgba(246,184,201,.7)">
         <div class="img"><img src="images/tokio-inkarami.png" alt="Tokio Inkarami Treatment" loading="lazy"></div>
-        <div class="body"><h3>Tokio Inkarami</h3><p>头发护理与质感修护，适合干、毛、受损、缺少质感的头发。是否适合，会根据头发状态判断。</p></div>
+        <div class="body"><h3>Tokio Inkarami</h3><p>头发护理与质感修护，适合干、毛、受损、缺少质感的头发。是否适合，会根据头发状态判断。<span class="tr">Repair treatment for dry, frizzy or damaged hair.</span></p></div>
       </article>
       <article class="care rv" style="--c:rgba(51,195,230,.45);--d:.1s">
         <div class="img"><img src="images/number-three.jpg" alt="Number Three 003 专业洗护产品" loading="lazy"></div>
-        <div class="body"><h3>Number Three / 003</h3><p>店内使用的专业洗护系列之一，根据不同头皮和头发状态选择适合的洗护方向。</p></div>
+        <div class="body"><h3>Number Three / 003</h3><p>来自日本的专业洗护和染膏系列，根据不同头皮和头发状态选择适合的产品。我们也使用意大利 Alfaparf Milano 染膏。<span class="tr">Professional Japanese hair care and colour. We also colour with Alfaparf Milano from Italy.</span></p></div>
       </article>
       <article class="care rv" style="--c:rgba(247,209,59,.55);--d:.2s">
         <div class="img"><img src="images/yume-headbath.jpg" alt="Takara Belmont YUME Headbath 洗护床" loading="lazy"></div>
-        <div class="body"><h3>Takara Belmont YUME</h3><p>YUME 洗护床让洗头和护理更舒服、更稳定、更放松。Designed for comfort and relaxation.</p></div>
+        <div class="body"><h3>Takara Belmont YUME</h3><p>YUME 洗护床让洗头和护理更舒服、更稳定、更放松。<span class="tr">Designed for comfort and relaxation.</span></p></div>
       </article>
     </div>
   </div>
@@ -918,6 +923,10 @@
         <div class="ans"><p>要看你现在的发色和发质。大部分灰色系需要先把头发提亮，至青会先检查头发，再告诉你需要几次、适不适合。</p><p class="en">It depends on your current colour and hair condition. Most grey tones need lightening first — Ching will check your hair and advise before starting.</p></div></details>
       <details class="rv"><summary>YUME Headbath 是什么？<small>What is the YUME Headbath?</small></summary>
         <div class="ans"><p>Takara Belmont YUME 是一张让你躺着洗头和做头皮护理的洗护床，躺起来很舒服、很放松。</p><p class="en">The Takara Belmont YUME is a reclining wash and spa bed for a comfortable, relaxing hair wash and scalp care.</p></div></details>
+      <details class="rv"><summary>会说英文和马来文吗？<small>Do you speak English / Bahasa Melayu?</small></summary>
+        <div class="ans"><p>会，我们可以用中文、英文和马来文为你服务。</p><p class="en">Yes — we speak English, Chinese and Bahasa Melayu. Kami boleh berbahasa Melayu.</p></div></details>
+      <details class="rv"><summary>用什么牌子的染膏？<small>Which hair colour brands do you use?</small></summary>
+        <div class="ans"><p>我们使用日本 Number Three（003）和意大利 Alfaparf Milano 的专业染膏，会根据你的发质和想要的颜色来选择。</p><p class="en">We use professional colour from Number Three (Japan) and Alfaparf Milano (Italy).</p></div></details>
       <details class="rv"><summary>有 Muslim friendly 产品或私人房间吗？<small>Muslim-friendly products or a private room?</small></summary>
         <div class="ans"><p>有，我们有 Muslim friendly 产品和私人房间，预约时可以先告诉我们。</p><p class="en">Yes, we have Muslim-friendly products and a private room. Just let us know when you book.</p></div></details>
     </div>
